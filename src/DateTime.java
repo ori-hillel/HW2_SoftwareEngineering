@@ -1,6 +1,9 @@
 public class DateTime extends Date{
-    private int hour;
-    private int minute;
+    private int hour=0, minute=0;
+    private final int MIN_HOUR = 0;
+    private final int MAX_HOUR = 23;
+    private final int MIN_MINUTE = 0;
+    private final int MAX_MINUTE = 59;
 
     public int getHour() {
         return hour;
@@ -11,12 +14,28 @@ public class DateTime extends Date{
     }
 
     public void setHour(int hour) {
-        this.hour = hour;
+        if (hour >= MIN_HOUR && hour <= MAX_HOUR) this.hour = hour;
     }
 
     public void setMinute(int minute) {
-        this.minute = minute;
+        if (minute >= MIN_MINUTE && minute <= MAX_MINUTE) this.minute = minute;
     }
 
-    public DateTime(int day, int month, int year,)
+    public DateTime(int year, int month, int day, int hour, int minute) {
+        super(year, month, day);
+        if (hour >= MIN_HOUR && hour <= MAX_HOUR) this.hour = hour;
+        if (minute >= MIN_MINUTE && minute <= MAX_MINUTE) this.minute = minute;
+    }
+    @Override
+    public boolean equals(Object dt) {
+        if (dt == this)
+            return true;
+        else if (!(dt instanceof DateTime))
+            return false;
+        return this.hashCode() == dt.hashCode();
+    }
+    @Override
+    public int hashCode() {
+        return super.hashCode() + hour + minute + 1;
+    }
 }

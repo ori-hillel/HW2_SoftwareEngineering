@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Date class constructor and attributes implemented">
+    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Date and DateTime getter/setter classes' methods implemented">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Date.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DateTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +41,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/orihi/IdeaProjects/Tests",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "C:/Users/orihi/IdeaProjects/HW2/src/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -56,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685545072598</updated>
       <workItem from="1685545073685" duration="147000" />
-      <workItem from="1685545260619" duration="1337000" />
+      <workItem from="1685545260619" duration="15386000" />
     </task>
     <task id="LOCAL-00001" summary="Date class constructor and attributes implemented">
       <created>1685546318229</created>
@@ -65,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685546318229</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Date and DateTime getter/setter classes' methods implemented">
+      <created>1685546769886</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685546769886</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,16 +105,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Date class constructor and attributes implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Date class constructor and attributes implemented" />
+    <MESSAGE value="Date and DateTime getter/setter classes' methods implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Date and DateTime getter/setter classes' methods implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="13" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
