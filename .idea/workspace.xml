@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Date and DateTime getter/setter classes' methods implemented">
+    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Date and DateTime hashCode() and equals(obj) methods implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DateTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/orihi/IdeaProjects/Tests",
+    "last_opened_file_path": "C:/Users/orihi/IdeaProjects/HW2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,7 +56,8 @@
       <option name="presentableId" value="Default" />
       <updated>1685545072598</updated>
       <workItem from="1685545073685" duration="147000" />
-      <workItem from="1685545260619" duration="15386000" />
+      <workItem from="1685545260619" duration="15691000" />
+      <workItem from="1685563843558" duration="679000" />
     </task>
     <task id="LOCAL-00001" summary="Date class constructor and attributes implemented">
       <created>1685546318229</created>
@@ -74,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685546769886</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Date and DateTime hashCode() and equals(obj) methods implemented">
+      <created>1685563530819</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685563530819</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,7 +112,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Date class constructor and attributes implemented" />
     <MESSAGE value="Date and DateTime getter/setter classes' methods implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Date and DateTime getter/setter classes' methods implemented" />
+    <MESSAGE value="Date and DateTime hashCode() and equals(obj) methods implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Date and DateTime hashCode() and equals(obj) methods implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -38,4 +38,13 @@ public class DateTime extends Date{
     public int hashCode() {
         return super.hashCode() + hour + minute + 1;
     }
+    @Override
+    public String toString() {
+        String ret = super.toString() + " ";
+        if (hour/10 == 0) ret += "0" + hour + ":";
+        else ret += hour + ":";
+        if (minute/10 == 0) ret += "0" + minute;
+        else ret += minute;
+        return ret;
+    }
 }

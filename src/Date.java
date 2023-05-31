@@ -36,12 +36,12 @@ public class Date {
     @Override
     public int hashCode() {
         String ret = "";
-        if (day%10==0)
+        if (day/10==0)
             ret += "90" + day;
         else
             ret += day;
 
-        if (month%10==0)
+        if (month/10==0)
             ret += "90" + month;
         else
             ret += month;
@@ -58,5 +58,23 @@ public class Date {
         else if (!(d instanceof Date))
             return false;
         return this.hashCode() == d.hashCode();
+    }
+    @Override
+    public String toString() {
+        String ret = "";
+        int[] arrDayMonth = {day, month};
+        for (int i : arrDayMonth) {
+            if (i/10 == 0) ret += "0" + i + "/";
+            else ret += i + "/";
+        }
+        int tempYear = year, divisor = 1000;
+        while (divisor != 1) {
+            if (year/divisor != 0)
+                break;
+            ret += 0;
+            divisor /= 10;
+        }
+        ret += year;
+        return ret;
     }
 }
