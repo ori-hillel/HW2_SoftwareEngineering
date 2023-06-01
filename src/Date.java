@@ -42,7 +42,7 @@ public class Date {
             ret += day;
 
         if (month/10==0)
-            ret += "9" + month;
+            ret += "0" + month;
         else
             ret += month;
         ret += year;

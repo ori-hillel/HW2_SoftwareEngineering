@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="PART A IS DONE!" />
+    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="PART A IS DONE! (This time it's fr)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Function.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/orihi/IdeaProjects/HW2",
+    "last_opened_file_path": "C:/Users/orihi/IdeaProjects/Tests",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,6 +59,7 @@
       <workItem from="1685545073685" duration="147000" />
       <workItem from="1685545260619" duration="15691000" />
       <workItem from="1685563843558" duration="1399000" />
+      <workItem from="1685612024450" duration="2554000" />
     </task>
     <task id="LOCAL-00001" summary="Date class constructor and attributes implemented">
       <created>1685546318229</created>
@@ -84,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685564835891</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="PART A IS DONE! (This time it's fr)">
+      <created>1685612335467</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685612335467</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +130,8 @@
     <MESSAGE value="Date and DateTime getter/setter classes' methods implemented" />
     <MESSAGE value="Date and DateTime hashCode() and equals(obj) methods implemented" />
     <MESSAGE value="PART A IS DONE!" />
-    <option name="LAST_COMMIT_MESSAGE" value="PART A IS DONE!" />
+    <MESSAGE value="PART A IS DONE! (This time it's fr)" />
+    <option name="LAST_COMMIT_MESSAGE" value="PART A IS DONE! (This time it's fr)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
