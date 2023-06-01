@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Constant class created, not fully implemented">
-      <change afterPath="$PROJECT_DIR$/src/MultiSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constant.java" afterDir="false" />
+    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Sum class created, not fully implemented">
+      <change afterPath="$PROJECT_DIR$/src/MultiProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,19 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="32bed3e6-8e33-4dac-8a77-6603591c4c11" />
+        <option name="url" value="https://github.com/ori-hillel/HW2_SoftwareEngineering.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="2QYyzY33GjjpWJwN0Jd7JMgLvqY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -60,7 +73,7 @@
       <workItem from="1685545073685" duration="147000" />
       <workItem from="1685545260619" duration="15691000" />
       <workItem from="1685563843558" duration="1399000" />
-      <workItem from="1685612024450" duration="3967000" />
+      <workItem from="1685612024450" duration="4395000" />
     </task>
     <task id="LOCAL-00001" summary="Date class constructor and attributes implemented">
       <created>1685546318229</created>
@@ -118,7 +131,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685626812166</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="MultiSum class created, not fully implemented">
+      <created>1685627451832</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685627451832</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Sum class created, not fully implemented">
+      <created>1685627548269</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685627548269</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +182,9 @@
     <MESSAGE value="PART A IS DONE! (This time it's fr)" />
     <MESSAGE value="Function declared in class Function" />
     <MESSAGE value="Constant class created, not fully implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Constant class created, not fully implemented" />
+    <MESSAGE value="MultiSum class created, not fully implemented" />
+    <MESSAGE value="Sum class created, not fully implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sum class created, not fully implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
