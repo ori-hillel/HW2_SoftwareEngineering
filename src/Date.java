@@ -37,12 +37,12 @@ public class Date {
     public int hashCode() {
         String ret = "";
         if (day/10==0)
-            ret += "90" + day;
+            ret += "9" + day;
         else
             ret += day;
 
         if (month/10==0)
-            ret += "90" + month;
+            ret += "9" + month;
         else
             ret += month;
         ret += year;
