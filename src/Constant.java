@@ -29,5 +29,4 @@ public class Constant extends Function {
     public String toString() {
         return null;
     }
-    p
 }

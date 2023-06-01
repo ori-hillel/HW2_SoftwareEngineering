@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="PART A IS DONE! (This time it's fr)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Function.java" afterDir="false" />
+    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Function declared in class Function">
+      <change afterPath="$PROJECT_DIR$/src/Constant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,7 @@
       <workItem from="1685545073685" duration="147000" />
       <workItem from="1685545260619" duration="15691000" />
       <workItem from="1685563843558" duration="1399000" />
-      <workItem from="1685612024450" duration="2554000" />
+      <workItem from="1685612024450" duration="3306000" />
     </task>
     <task id="LOCAL-00001" summary="Date class constructor and attributes implemented">
       <created>1685546318229</created>
@@ -96,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685612335467</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Function declared in class Function">
+      <created>1685626033199</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685626033199</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +136,8 @@
     <MESSAGE value="Date and DateTime hashCode() and equals(obj) methods implemented" />
     <MESSAGE value="PART A IS DONE!" />
     <MESSAGE value="PART A IS DONE! (This time it's fr)" />
-    <option name="LAST_COMMIT_MESSAGE" value="PART A IS DONE! (This time it's fr)" />
+    <MESSAGE value="Function declared in class Function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Function declared in class Function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
