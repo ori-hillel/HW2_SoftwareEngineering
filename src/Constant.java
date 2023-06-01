@@ -1,5 +1,5 @@
 public class Constant extends Function {
-    double value;
+    protected double value;
     public Constant(double value) {
         this.value = value;
     }
