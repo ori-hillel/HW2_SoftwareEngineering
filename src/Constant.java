@@ -27,6 +27,6 @@ public class Constant extends Function {
 
     @Override
     public String toString() {
-        return null;
+        return "(" + this.value + ")";
     }
 }

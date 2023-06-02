@@ -16,7 +16,7 @@ public class Power extends Function {
 
     @Override
     public String toString() {
-        return null;
+        return "(" + function.toString() + "^" + exponent + ")";
     }
 
     @Override

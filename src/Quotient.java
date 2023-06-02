@@ -10,7 +10,7 @@ Function function;
 
     @Override
     public String toString() {
-        return null;
+        return "(1/" + function.toString() + ")";
     }
 
     @Override

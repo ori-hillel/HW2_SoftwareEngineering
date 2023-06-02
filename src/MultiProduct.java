@@ -1,5 +1,10 @@
 public class MultiProduct extends Function {
     private Function[] functions;
+
+    public Function[] getFunctions() {
+        return functions;
+    }
+
     public MultiProduct(Function function, Function ... functions) {
         this.functions = new Function[functions.length + 1];
         functions[0] = function;
@@ -17,7 +22,16 @@ public class MultiProduct extends Function {
 
     @Override
     public String toString() {
-        return null;
+        String ret = "(";
+        for (int i = 0; i < functions.length; i++) {
+            if (i == 0)
+                ret += functions[i].toString();
+            else {
+                ret += "*" + functions[i].toString();
+            }
+        }
+        ret += ")";
+        return ret;
     }
 
     @Override
