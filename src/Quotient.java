@@ -1,21 +1,26 @@
 public class Quotient extends Function {
-Function function;
-    public Quotient(Function function) {
-        this.function = function;
+Function dividend;
+Function divisor;
+    public Quotient(Function dividend, Function divisor) {
+        this.dividend = dividend;
+        this.divisor = divisor;
     }
     @Override
     public double valueAt(double x) {
-        return 1/function.valueAt(x);
+        return dividend.valueAt(x)/divisor.valueAt(x);
     }
 
     @Override
     public String toString() {
-        return "(1/" + function.toString() + ")";
+        return "(" + dividend.toString() + "/" + divisor.toString() + ")";
     }
 
     @Override
     public Function derivative() {
-        return null;
+       return new Quotient(
+                    new Difference(
+                        new Product(dividend.derivative(), divisor), new Product(dividend, divisor.derivative())),
+       new Power(divisor, 2));
     }
 
     @Override

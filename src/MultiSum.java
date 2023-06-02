@@ -28,7 +28,10 @@ public class MultiSum extends Function {
 
     @Override
     public Function derivative() {
-        return null;
+        Function[] ret = new Function[functions.length];
+        for (int i  = 0; i < functions.length; i++)
+            ret[i] = functions[i].derivative();
+        return new MultiSum(new Constant(0), ret);
     }
 
     @Override

@@ -28,7 +28,13 @@ public class Polynomial extends Function {
 
     @Override
     public Function derivative() {
-        return null;
+        double[] ret = coefficients.clone();
+        for (int i = 0; i < coefficients.length; i++) {
+            if (i == coefficients.length - 1)
+                ret[i] = 0;
+            ret[i] = coefficients[i+1]*(i+1);
+        }
+        return new Polynomial(ret);
     }
 
     @Override
@@ -44,5 +50,12 @@ public class Polynomial extends Function {
     @Override
     public Function taylorPolynomial(int n) {
         return null;
+    }
+
+    private double factorial(double x) {
+        double result = 1.0;
+        for (int i = 2; i <=x; i++)
+            result *= i;
+        return result;
     }
 }
