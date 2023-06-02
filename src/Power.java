@@ -1,5 +1,5 @@
 public class Power extends Function {
-    protected int power;
+    private int power;
     @Override
     public double valueAt(double x) {
         return 0;

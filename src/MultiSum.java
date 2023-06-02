@@ -1,5 +1,5 @@
 public class MultiSum extends Function {
-    protected Function[] functions;
+    private Function[] functions;
     public MultiSum(Function function, Function ... functions) {}
 
     @Override

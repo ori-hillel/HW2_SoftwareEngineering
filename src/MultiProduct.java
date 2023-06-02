@@ -1,5 +1,5 @@
 public class MultiProduct extends Function {
-    Function[] functions;
+    private Function[] functions;
     public MultiProduct(Function function, Function ... functions) {
     }
 

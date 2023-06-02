@@ -1,5 +1,5 @@
 public class Polynomial extends Function {
-    protected double[] coefficients;
+    private double[] coefficients;
     public Polynomial(double... coefficients) {
 
     }
