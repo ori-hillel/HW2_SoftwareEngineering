@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Sum class created, not fully implemented">
-      <change afterPath="$PROJECT_DIR$/src/MultiProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Product class created, not fully implemented" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +70,7 @@
       <workItem from="1685545073685" duration="147000" />
       <workItem from="1685545260619" duration="15691000" />
       <workItem from="1685563843558" duration="1399000" />
-      <workItem from="1685612024450" duration="4395000" />
+      <workItem from="1685612024450" duration="4491000" />
     </task>
     <task id="LOCAL-00001" summary="Date class constructor and attributes implemented">
       <created>1685546318229</created>
@@ -145,7 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685627548269</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="MultiProduct class created, not fully implemented">
+      <created>1685627859538</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685627859538</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Product class created, not fully implemented">
+      <created>1685627934012</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685627934012</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +195,9 @@
     <MESSAGE value="Constant class created, not fully implemented" />
     <MESSAGE value="MultiSum class created, not fully implemented" />
     <MESSAGE value="Sum class created, not fully implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sum class created, not fully implemented" />
+    <MESSAGE value="MultiProduct class created, not fully implemented" />
+    <MESSAGE value="Product class created, not fully implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product class created, not fully implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
