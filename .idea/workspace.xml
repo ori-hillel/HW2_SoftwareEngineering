@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Minor changes" />
+    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Negation class created, not fully implemented" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +71,7 @@
       <workItem from="1685545260619" duration="15691000" />
       <workItem from="1685563843558" duration="1399000" />
       <workItem from="1685612024450" duration="4491000" />
-      <workItem from="1685699527925" duration="1033000" />
+      <workItem from="1685699527925" duration="1348000" />
     </task>
     <task id="LOCAL-00001" summary="Date class constructor and attributes implemented">
       <created>1685546318229</created>
@@ -178,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685699953706</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Negation class created, not fully implemented">
+      <created>1685711580667</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1685711580667</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +228,8 @@
     <MESSAGE value="Product class created, not fully implemented" />
     <MESSAGE value="MultiProduct's and MultiSum's constructors updated s.t. sending 1 argument would lead to compilation error" />
     <MESSAGE value="Minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes" />
+    <MESSAGE value="Negation class created, not fully implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Negation class created, not fully implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
