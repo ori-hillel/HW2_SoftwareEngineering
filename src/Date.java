@@ -1,5 +1,5 @@
 public class Date {
-    protected int day=1, month=1, year = 0;
+    private int day=1, month=1, year = 0;
     private final int MIN_DAY = 1;
     private final int MAX_DAY = 31;
     private final int MIN_MONTH = 1;

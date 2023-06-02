@@ -1,8 +1,9 @@
 public class Polynomial extends Function {
-    protected double[] coefficients;
+    private double[] coefficients;
     public Polynomial(double... coefficients) {
 
     }
+
     @Override
     public double valueAt(double x) {
         double sum = 0;
