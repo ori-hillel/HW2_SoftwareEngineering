@@ -3,6 +3,7 @@ public class Polynomial extends Function {
     public Polynomial(double... coefficients) {
 
     }
+
     @Override
     public double valueAt(double x) {
         return 0;
