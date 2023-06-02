@@ -1,9 +1,9 @@
 public class Power extends Function {
-    private int power;
+    private int exponent;
     private Function function;
-    public Power (Function function, int power) {
+    public Power (Function function, int exponent) {
         this.function = function;
-        this.power = power;
+        this.exponent = exponent;
     }
     @Override
     public double valueAt(double x) {
