@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Negation class created, not fully implemented">
-      <change afterPath="$PROJECT_DIR$/src/Difference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Polynomial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Quotient">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MultiProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Polynomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polynomial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Power.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quotient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quotient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,7 @@
       <workItem from="1685545260619" duration="15691000" />
       <workItem from="1685563843558" duration="1399000" />
       <workItem from="1685612024450" duration="4491000" />
-      <workItem from="1685699527925" duration="2404000" />
+      <workItem from="1685699527925" duration="6163000" />
     </task>
     <task id="LOCAL-00001" summary="Date class constructor and attributes implemented">
       <created>1685546318229</created>
@@ -197,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685711675120</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Difference, Polynomial">
+      <created>1685712745638</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1685712745638</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Quotient">
+      <created>1685712936337</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1685712936337</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +230,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="Ori" />
                       </list>
                     </value>
                   </entry>
@@ -241,7 +257,9 @@
     <MESSAGE value="MultiProduct's and MultiSum's constructors updated s.t. sending 1 argument would lead to compilation error" />
     <MESSAGE value="Minor changes" />
     <MESSAGE value="Negation class created, not fully implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Negation class created, not fully implemented" />
+    <MESSAGE value="Difference, Polynomial" />
+    <MESSAGE value="Quotient" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quotient" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

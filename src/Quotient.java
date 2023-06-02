@@ -1,9 +1,11 @@
 public class Quotient extends Function {
 Function function;
-    public Quotient(Function function) {}
+    public Quotient(Function function) {
+        this.function = function;
+    }
     @Override
     public double valueAt(double x) {
-        return 0;
+        return 1/function.valueAt(x);
     }
 
     @Override

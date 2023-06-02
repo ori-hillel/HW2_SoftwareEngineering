@@ -5,7 +5,19 @@ public class Polynomial extends Function {
     }
     @Override
     public double valueAt(double x) {
-        return 0;
+        double sum = 0;
+        Function base;
+        Function baseToExponent;
+        Function coefficient;
+        Function func;
+        for (int exp = 0; exp < coefficients.length; exp++) {
+            base = new Constant(exp);
+            baseToExponent = new Power(base, exp);
+            coefficient = new Constant(coefficients[exp]);
+            func = new Product(baseToExponent, coefficient);
+            sum += func.valueAt(x);
+        }
+        return sum;
     }
 
     @Override

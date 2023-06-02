@@ -1,8 +1,18 @@
 public class Power extends Function {
-    protected int power;
+    protected int exponent;
+    protected Function function;
+
+    public Power (Function function, int exponent) {
+        this.function = function;
+        this.exponent = exponent;
+    }
     @Override
     public double valueAt(double x) {
-        return 0;
+        double ret = 1;
+        double value = function.valueAt(x);
+        for (int i = 0; i < exponent; i++)
+            ret *= value;
+        return value;
     }
 
     @Override

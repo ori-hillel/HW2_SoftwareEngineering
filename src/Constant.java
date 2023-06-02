@@ -12,7 +12,7 @@ public class Constant extends Function {
     public Function derivative() { return new Constant(0);}
 @Override
     public Function taylorPolynomial(int n) {
-        return new Constant(0);
+        return this;
 }
 
     @Override
