@@ -30,6 +30,12 @@ public class Power extends Function {
         Root rootFinder = new Root(powerFunction);
         return rootFinder.findRootByBisection(a, b, epsilon);
     }
+    @Override
+    public double bisectionMethod(double a, double b) {
+        Function constFunction = this;
+        Root rootFinder= new Root(constFunction);
+        return rootFinder.findRootByBisection(a,b);
+    }
 
     @Override
     public double newtonRaphsonMethod(double a, double epsilon) {

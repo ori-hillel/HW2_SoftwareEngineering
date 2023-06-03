@@ -55,6 +55,12 @@ public class MultiProduct extends Function {
         Root rootFinder= new Root(this);
         return rootFinder.findRootByBisection(a,b,epsilon);
     }
+    @Override
+    public double bisectionMethod(double a, double b) {
+        Function constFunction = this;
+        Root rootFinder= new Root(constFunction);
+        return rootFinder.findRootByBisection(a,b);
+    }
 
     @Override
     public double newtonRaphsonMethod(double a, double epsilon) {

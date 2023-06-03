@@ -23,6 +23,13 @@ public class Constant extends Function {
     }
 
     @Override
+    public double bisectionMethod(double a, double b) {
+        Function constFunction = this;
+        Root rootFinder= new Root(constFunction);
+        return rootFinder.findRootByBisection(a,b);
+    }
+
+    @Override
     public double newtonRaphsonMethod(double a, double epsilon) {
         return 0;
     }
