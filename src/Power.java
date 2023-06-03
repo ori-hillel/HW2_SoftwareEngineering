@@ -17,7 +17,9 @@ public class Power extends Function {
 
     @Override
     public double bisectionMethod(double a, double b, double epsilon) {
-        return 0;
+        Function powerFunction = this;  // Current Power function
+        Root rootFinder = new Root(powerFunction);
+        return rootFinder.findRoot(a, b, epsilon);
     }
 
     @Override

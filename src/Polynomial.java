@@ -21,7 +21,10 @@ public class Polynomial extends Function {
 
     @Override
     public double bisectionMethod(double a, double b, double epsilon) {
-        return 0;
+        Function polynomial = this;  // Current polynomial function
+        Root rootFinder = new Root(polynomial);
+
+        return rootFinder.findRoot(a, b, epsilon);
     }
 
     @Override

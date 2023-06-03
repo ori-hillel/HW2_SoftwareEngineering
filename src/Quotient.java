@@ -1,6 +1,8 @@
 public class Quotient extends Function {
 Function function;
-    public Quotient(Function function) {}
+    public Quotient(Function function) {
+
+    }
     @Override
     public double valueAt(double x) {
         return 0;
@@ -18,7 +20,9 @@ Function function;
 
     @Override
     public double bisectionMethod(double a, double b, double epsilon) {
-        return 0;
+        Function quotientFunction = this;
+        Root rootFinder= new Root(quotientFunction);
+        return rootFinder.findRoot(a,b,epsilon);
     }
 
     @Override

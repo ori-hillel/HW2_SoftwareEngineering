@@ -19,7 +19,10 @@ public class MultiSum extends Function {
 
     @Override
     public double bisectionMethod(double a, double b, double epsilon) {
-        return 0;
+        Function multiSumFunction = this;  // Current MultiSum function
+        Root rootFinder = new Root(multiSumFunction);
+
+        return rootFinder.findRoot(a, b, epsilon);
     }
 
     @Override

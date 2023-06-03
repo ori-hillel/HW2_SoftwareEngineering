@@ -17,7 +17,9 @@ public class Constant extends Function {
 
     @Override
     public double bisectionMethod(double a, double b, double epsilon) {
-        return 0;
+        Function constFunction = this;
+        Root rootFinder= new Root(constFunction);
+        return rootFinder.findRoot(a,b,epsilon);
     }
 
     @Override
