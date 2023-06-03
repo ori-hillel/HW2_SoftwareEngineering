@@ -22,7 +22,7 @@ public class MultiSum extends Function {
         Function multiSumFunction = this;  // Current MultiSum function
         Root rootFinder = new Root(multiSumFunction);
 
-        return rootFinder.findRoot(a, b, epsilon);
+        return rootFinder.findRootByBisection(a, b, epsilon);
     }
 
     @Override

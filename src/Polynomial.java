@@ -24,7 +24,7 @@ public class Polynomial extends Function {
         Function polynomial = this;  // Current polynomial function
         Root rootFinder = new Root(polynomial);
 
-        return rootFinder.findRoot(a, b, epsilon);
+        return rootFinder.findRootByBisection(a, b, epsilon);
     }
 
     @Override

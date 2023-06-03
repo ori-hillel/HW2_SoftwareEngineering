@@ -22,7 +22,7 @@ Function function;
     public double bisectionMethod(double a, double b, double epsilon) {
         Function quotientFunction = this;
         Root rootFinder= new Root(quotientFunction);
-        return rootFinder.findRoot(a,b,epsilon);
+        return rootFinder.findRootByBisection(a,b,epsilon);
     }
 
     @Override

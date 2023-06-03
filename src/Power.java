@@ -19,7 +19,7 @@ public class Power extends Function {
     public double bisectionMethod(double a, double b, double epsilon) {
         Function powerFunction = this;  // Current Power function
         Root rootFinder = new Root(powerFunction);
-        return rootFinder.findRoot(a, b, epsilon);
+        return rootFinder.findRootByBisection(a, b, epsilon);
     }
 
     @Override

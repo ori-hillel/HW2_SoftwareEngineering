@@ -4,7 +4,7 @@ public class Root {
     public Root(Function function) {
         this.function=function;
     }
-    public double findRoot(double a, double b, double epsilon)
+    public double findRootByBisection(double a, double b, double epsilon)
     {
         double left =a,right =b;
         double mid;

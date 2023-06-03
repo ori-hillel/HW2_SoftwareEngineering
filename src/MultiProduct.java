@@ -20,9 +20,8 @@ public class MultiProduct extends Function {
 
     @Override
     public double bisectionMethod(double a, double b, double epsilon) {
-        Function multiProductFunction = this;
-        Root rootFinder= new Root(MultiProduct);
-        return rootFinder.findRoot(a,b,epsilon);
+        Root rootFinder= new Root(this);
+        return rootFinder.findRootByBisection(a,b,epsilon);
     }
 
     @Override

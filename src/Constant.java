@@ -19,7 +19,7 @@ public class Constant extends Function {
     public double bisectionMethod(double a, double b, double epsilon) {
         Function constFunction = this;
         Root rootFinder= new Root(constFunction);
-        return rootFinder.findRoot(a,b,epsilon);
+        return rootFinder.findRootByBisection(a,b,epsilon);
     }
 
     @Override
