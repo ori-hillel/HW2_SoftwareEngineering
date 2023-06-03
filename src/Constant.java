@@ -9,9 +9,11 @@ public class Constant extends Function {
         return this.value;
     }
 @Override
-    public Function derivative() { return new Constant(0);}
+    public Constant derivative() { return new Constant(0);}
     @Override
     public String toString() {
+        if (value / (double)((int)value) == 1) // this.value is not a fraction
+             return "(" + (int)this.value + ")";
         return "(" + this.value + ")";
     }
 }

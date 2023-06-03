@@ -35,7 +35,7 @@ public class MultiProduct extends Function {
     }
 
     @Override
-    public Function derivative() {
+    public MultiProduct derivative() {
         Function temp;
         Function[] ret = new Function[functions.length];
         for (int i = 0; i < functions.length; i++) {

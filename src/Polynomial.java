@@ -27,7 +27,7 @@ public class Polynomial extends Function {
     }
 
     @Override
-    public Function derivative() {
+    public Polynomial derivative() {
         double[] ret = coefficients.clone();
         for (int i = 0; i < coefficients.length; i++) {
             if (i == coefficients.length - 1)

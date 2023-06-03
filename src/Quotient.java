@@ -16,7 +16,7 @@ Function divisor;
     }
 
     @Override
-    public Function derivative() {
+    public Quotient derivative() {
        return new Quotient(
                     new Difference(
                         new Product(dividend.derivative(), divisor), new Product(dividend, divisor.derivative())),
