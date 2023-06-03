@@ -34,19 +34,6 @@ public class MultiSum extends Function {
         return new MultiSum(new Constant(0), ret);
     }
 
-    @Override
-    public double bisectionMethod(double a, double b, double epsilon) {
-        Function multiSumFunction = this;  // Current MultiSum function
-        Root rootFinder = new Root(multiSumFunction);
-
-        return rootFinder.findRootByBisection(a, b, epsilon);
-    }
-    @Override
-    public double bisectionMethod(double a, double b) {
-        Function constFunction = this;
-        Root rootFinder= new Root(constFunction);
-        return rootFinder.findRootByBisection(a,b);
-    }
 
     @Override
     public double newtonRaphsonMethod(double a, double epsilon) {

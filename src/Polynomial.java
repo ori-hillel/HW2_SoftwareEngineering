@@ -36,35 +36,4 @@ public class Polynomial extends Function {
         }
         return new Polynomial(ret);
     }
-
-    @Override
-    public double bisectionMethod(double a, double b, double epsilon) {
-        Function polynomial = this;  // Current polynomial function
-        Root rootFinder = new Root(polynomial);
-
-        return rootFinder.findRootByBisection(a, b, epsilon);
-    }
-    @Override
-    public double bisectionMethod(double a, double b) {
-        Function constFunction = this;
-        Root rootFinder= new Root(constFunction);
-        return rootFinder.findRootByBisection(a,b);
-    }
-
-    @Override
-    public double newtonRaphsonMethod(double a, double epsilon) {
-        return 0;
-    }
-
-    @Override
-    public Function taylorPolynomial(int n) {
-        return null;
-    }
-
-    private double factorial(double x) {
-        double result = 1.0;
-        for (int i = 2; i <=x; i++)
-            result *= i;
-        return result;
-    }
 }

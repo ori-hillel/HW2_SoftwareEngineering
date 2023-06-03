@@ -22,27 +22,4 @@ Function divisor;
                         new Product(dividend.derivative(), divisor), new Product(dividend, divisor.derivative())),
                     new Power(divisor, 2));
     }
-
-    @Override
-    public double bisectionMethod(double a, double b, double epsilon) {
-        Function quotientFunction = this;
-        Root rootFinder= new Root(quotientFunction);
-        return rootFinder.findRootByBisection(a,b,epsilon);
-    }
-    @Override
-    public double bisectionMethod(double a, double b) {
-        Function constFunction = this;
-        Root rootFinder= new Root(constFunction);
-        return rootFinder.findRootByBisection(a,b);
-    }
-
-    @Override
-    public double newtonRaphsonMethod(double a, double epsilon) {
-        return 0;
-    }
-
-    @Override
-    public Function taylorPolynomial(int n) {
-        return null;
-    }
 }

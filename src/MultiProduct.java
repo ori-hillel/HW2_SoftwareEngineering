@@ -49,24 +49,6 @@ public class MultiProduct extends Function {
         }
         return new MultiProduct(new Constant(1), ret);
     }
-
-    @Override
-    public double bisectionMethod(double a, double b, double epsilon) {
-        Root rootFinder= new Root(this);
-        return rootFinder.findRootByBisection(a,b,epsilon);
-    }
-    @Override
-    public double bisectionMethod(double a, double b) {
-        Function constFunction = this;
-        Root rootFinder= new Root(constFunction);
-        return rootFinder.findRootByBisection(a,b);
-    }
-
-    @Override
-    public double newtonRaphsonMethod(double a, double epsilon) {
-        return 0;
-    }
-
     @Override
     public Function taylorPolynomial(int n) {
         return null;
