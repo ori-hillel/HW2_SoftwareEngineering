@@ -7,9 +7,9 @@ public class MultiProduct extends Function {
 
     public MultiProduct(Function function, Function ... functions) {
         this.functions = new Function[functions.length + 1];
-        functions[0] = function;
-        for (int i = 1; i < this.functions.length; i++)
-            this.functions[i] = functions[i];
+        this.functions[0] = function;
+        for (int i = 0; i < this.functions.length; i++)
+            this.functions[i+1] = functions[i];
     }
 
     @Override
