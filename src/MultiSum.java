@@ -5,7 +5,12 @@ public class MultiSum extends Function {
         return functions;
     }
 
-    public MultiSum(Function function, Function ... functions) {}
+    public MultiSum(Function function, Function ... functions) {
+        this.functions = new Function[functions.length + 1];
+        functions[0] = function;
+        for (int i = 1; i < this.functions.length; i++)
+            this.functions[i] = functions[i];
+    }
 
     @Override
     public double valueAt(double x) {
