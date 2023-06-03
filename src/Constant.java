@@ -16,4 +16,8 @@ public class Constant extends Function {
              return "(" + (int)this.value + ")";
         return "(" + this.value + ")";
     }
+    @Override
+    public Constant taylorPolynomial(int n) {
+        return new Constant(value);
+    }
 }
