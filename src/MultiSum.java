@@ -14,18 +14,19 @@ public class MultiSum extends Function {
 
     @Override
     public double valueAt(double x) {
-        return 0;
+        double sum = 0;
+        for (Function f: functions)
+            sum += f.valueAt(x);
+        return sum;
     }
 
     @Override
     public String toString() {
         String ret = "(";
         for (int i = 0; i < functions.length; i++) {
-            if (i == 0)
-                ret += functions[i].toString();
-            else {
-                ret += "+" + functions[i].toString();
-            }
+            if (i != 0)
+                ret += " + ";
+            ret += functions[i].toString();
         }
         ret += ")";
         return ret;
