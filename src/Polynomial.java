@@ -23,8 +23,17 @@ public class Polynomial extends Function {
 
     @Override
     public String toString() {
-        return null;
-    }
+        String ret = "(";
+        for (int i = 0; i < coefficients.length; i++) {
+            if (i == 0)
+                ret += coefficients[i];
+            else {
+                ret += " + " + coefficients[i];
+            }
+        }
+        ret += ")";
+        return ret;
+        }
 
     @Override
     public Function derivative() {

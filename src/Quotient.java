@@ -35,6 +35,6 @@ Function divisor;
 
     @Override
     public Function taylorPolynomial(int n) {
-        return null;
+        return "(" + dividend.toString() + " / " + divisor + ")";
     }
 }
