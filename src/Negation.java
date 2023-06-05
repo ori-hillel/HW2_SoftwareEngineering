@@ -5,6 +5,6 @@ public class  Negation extends Product {
     }
     @Override
     public String toString() {
-        return "(-" + super.getFuncA().toString() + ")";
+        return "(-" + super.getFuncB().toString() + ")";
     }
 }
