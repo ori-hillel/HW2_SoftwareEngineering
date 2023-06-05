@@ -39,15 +39,4 @@ public class MultiSum extends Function {
             ret[i] = functions[i].derivative();
         return new MultiSum(ret[0], Auxiliary.removeIndex(0, ret));
     }
-
-
-    @Override
-    public double newtonRaphsonMethod(double a, double epsilon) {
-        return 0;
-    }
-
-    @Override
-    public Function taylorPolynomial(int n) {
-        return null;
-    }
 }

@@ -52,8 +52,4 @@ public class MultiProduct extends Function {
         }
         return new MultiSum(sum[0], Auxiliary.removeIndex(0, sum));
     }
-    @Override
-    public Function taylorPolynomial(int n) {
-        return null;
-    }
 }
