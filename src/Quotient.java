@@ -12,7 +12,7 @@ Function divisor;
 
     @Override
     public String toString() {
-        return "(" + dividend.toString() + "/" + divisor.toString() + ")";
+        return "(" + dividend.toString() + " / " + divisor.toString() + ")";
     }
 
     @Override
