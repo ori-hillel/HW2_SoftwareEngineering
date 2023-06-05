@@ -31,27 +31,33 @@ public class Polynomial extends Function {
     @Override
     public String toString() {
         int size = coefficients.length;
+        double[] clonedCoefficients = coefficients.clone();
         String ret = "(";
         String temp;
         boolean isFirst = true;
         for (int exp = 0; exp < size; exp++) {
             temp = "";
-            if (coefficients[exp] == 0)
+            if (clonedCoefficients[exp] == 0)
                 continue;
             if (!isFirst) {
-                temp += " + ";
-            }
-            else if (exp == 0){
-                if (Auxiliary.isWholeNumber(coefficients[exp])) // remove decimal point
-                    temp += (int)coefficients[exp];
+                if (clonedCoefficients[exp] > 0)
+                    temp += " + ";
                 else
-                    temp += coefficients[exp];
+                    temp += " - ";
             }
-            else if (coefficients[exp] != 1) {
-                if (Auxiliary.isWholeNumber(coefficients[exp])) // remove decimal point
-                    temp += (int)coefficients[exp];
+            if (clonedCoefficients[exp] < 0 && !isFirst)
+                clonedCoefficients[exp] *= -1;
+            if (exp == 0) {
+                if (Auxiliary.isWholeNumber(clonedCoefficients[exp])) // remove decimal point
+                    temp += (int)clonedCoefficients[exp];
                 else
-                    temp += coefficients[exp];
+                    temp += clonedCoefficients[exp];
+            }
+            else if (clonedCoefficients[exp] != 1) {
+                if (Auxiliary.isWholeNumber(clonedCoefficients[exp])) // remove decimal point
+                    temp += (int)clonedCoefficients[exp];
+                else
+                    temp += clonedCoefficients[exp];
             }
             if (exp > 0) { // x, x^2, x^3 ...
                 if (exp == 1) // x
