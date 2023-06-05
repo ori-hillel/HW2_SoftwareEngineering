@@ -1,7 +1,11 @@
 public class Polynomial extends Function {
     private double[] coefficients;
     public Polynomial(double... coefficients) {
-
+        int size = coefficients.length;
+        this.coefficients = new double[size];
+        for (int i = 0; i < size; i++) {
+            this.coefficients[i] = coefficients[i];
+        }
     }
 
     @Override
@@ -23,17 +27,24 @@ public class Polynomial extends Function {
 
     @Override
     public String toString() {
+        int size = coefficients.length;
         String ret = "(";
-        for (int i = 0; i < coefficients.length; i++) {
-            if (i == 0)
-                ret += coefficients[i];
-            else {
-                ret += " + " + coefficients[i];
-            }
+        String temp = "";
+        for (int exp = 0; exp < size; exp++) {
+            if (coefficients[exp] == 0)
+                continue;
+            if (exp != 0)
+                temp += " + ";
+            if (Auxiliary.isWholeNumber(coefficients[exp])) // remove decimal point
+                temp += (int)coefficients[exp];
+            else
+                temp += coefficients[exp];
+            if (exp > 0) // x^1, x^2 ...
+                temp += "x^" + exp + ")";
+            ret += temp + ")";
         }
-        ret += ")";
         return ret;
-        }
+    }
 
     @Override
     public Polynomial derivative() {

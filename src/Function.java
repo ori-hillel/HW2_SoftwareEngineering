@@ -35,12 +35,15 @@ public abstract class Function {
     public double newtonRaphsonMethod(double a) {
         return 0;
     }
-    public Function taylorPolynomial(int n) {
-        Function derivative = this;
+    public Polynomial taylorPolynomial(int n) {
+        Function f = this;
         double[] coefficients = new double[n];
-        for (int k = 0; k < n; k++) {
-            coefficients[k] = derivative.valueAt(0)/Auxiliary.factorial(k);
-            derivative = derivative.derivative();
+        if (n == 0)
+            return new Polynomial(this.valueAt(0));
+        else
+            for (int k = 0; k < n; k++) {
+                coefficients[k] = f.valueAt(0)/Auxiliary.factorial(k);
+                f = f.derivative();
         }
         return new Polynomial(coefficients);
     }

@@ -22,7 +22,7 @@ public class Constant extends Function {
         return "(" + this.value + ")";
     }
     @Override
-    public Constant taylorPolynomial(int n) {
-        return new Constant(value);
+    public Polynomial taylorPolynomial(int n) {
+        return new Polynomial(value);
     }
 }
