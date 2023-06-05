@@ -19,7 +19,7 @@ Function divisor;
     public Quotient derivative() {
        return new Quotient(
                     new Difference(
-                        new Product(dividend.derivative(), divisor), new Product(dividend, divisor.derivative())),
+                        new Product(dividend.derivative(), divisor), new Product(divisor.derivative(), dividend)),
        new Power(divisor, 2));
     }
 }

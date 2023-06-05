@@ -33,12 +33,14 @@ public class Polynomial extends Function {
         int size = coefficients.length;
         String ret = "(";
         String temp;
+        boolean isFirst = true;
         for (int exp = 0; exp < size; exp++) {
             temp = "";
             if (coefficients[exp] == 0)
                 continue;
-            if (exp != 0)
+            if (!isFirst) {
                 temp += " + ";
+            }
             else if (exp == 0){
                 if (Auxiliary.isWholeNumber(coefficients[exp])) // remove decimal point
                     temp += (int)coefficients[exp];
@@ -51,8 +53,13 @@ public class Polynomial extends Function {
                 else
                     temp += coefficients[exp];
             }
-            if (exp > 0) // x^1, x^2 ...
-                temp += "x^" + exp;
+            if (exp > 0) { // x, x^2, x^3 ...
+                if (exp == 1) // x
+                    temp += "x";
+                else  // x^2, x^3...
+                    temp += "x^" + exp;
+            }
+            isFirst = false;
             ret += temp;
         }
         return ret + ")";
@@ -64,7 +71,8 @@ public class Polynomial extends Function {
         for (int i = 0; i < coefficients.length; i++) {
             if (i == coefficients.length - 1)
                 ret[i] = 0;
-            ret[i] = coefficients[i+1]*(i+1);
+            else
+                ret[i] = coefficients[i+1]*(i+1);
         }
         return new Polynomial(ret);
     }
