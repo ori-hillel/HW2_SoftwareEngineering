@@ -16,8 +16,11 @@ public class Polynomial extends Function {
         Function coefficient;
         Function func;
         for (int exp = 0; exp < coefficients.length; exp++) {
-            base = new Constant(exp);
-            baseToExponent = new Power(base, exp);
+            base = new Constant(x);
+            if (exp != 0)
+                baseToExponent = new Power(base, exp);
+            else
+                baseToExponent = new Constant(1);
             coefficient = new Constant(coefficients[exp]);
             func = new Product(baseToExponent, coefficient);
             sum += func.valueAt(x);
