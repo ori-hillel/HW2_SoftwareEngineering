@@ -12,7 +12,7 @@ public class  Negation extends Product {
     }
     @Override
     public Function derivative() {
-        return new Negation(getFuncB());
+        return new Negation(getFuncB().derivative());
     }
 
 
