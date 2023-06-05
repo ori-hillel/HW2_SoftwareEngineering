@@ -35,7 +35,7 @@ public class MultiProduct extends Function {
     }
 
     @Override
-    public MultiSum derivative() {
+    public Function derivative() {
         int size = functions.length;
         Function iDerivative = functions[0].derivative();
         Function[] innerProduct = new Function[size];
@@ -47,8 +47,8 @@ public class MultiProduct extends Function {
                     innerProduct[j] = iDerivative;
                 else
                     innerProduct[j] = functions[j];
-                sum[i] = new MultiProduct(innerProduct[i], Auxiliary.removeIndex(i, innerProduct));
             }
+            sum[i] = new MultiProduct(innerProduct[i], Auxiliary.removeIndex(i, innerProduct));
         }
         return new MultiSum(sum[0], Auxiliary.removeIndex(0, sum));
     }
