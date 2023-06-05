@@ -16,7 +16,7 @@ public class MultiProduct extends Function {
     public double valueAt(double x) {
         double product = 1;
         for (Function f: functions)
-            product += f.valueAt(x);
+            product *= f.valueAt(x);
         return product;
     }
 
@@ -27,7 +27,7 @@ public class MultiProduct extends Function {
             if (i == 0)
                 ret += functions[i].toString();
             else {
-                ret += "*" + functions[i].toString();
+                ret += " * " + functions[i].toString();
             }
         }
         ret += ")";
@@ -35,19 +35,22 @@ public class MultiProduct extends Function {
     }
 
     @Override
-    public MultiProduct derivative() {
-        Function temp;
-        Function[] ret = new Function[functions.length];
-        for (int i = 0; i < functions.length; i++) {
-            temp = functions[i];
-            for (int j = 0; j < functions.length; j++) {
-                if (i == j)
-                    functions[i] = new Constant(1);
-                ret[i] = new MultiProduct(functions[i].derivative(), functions);
+    public MultiSum derivative() {
+        int size = functions.length;
+        Function iDerivative = functions[0].derivative();
+        Function[] innerProduct = new Function[size];
+        Function[] sum = new Function[size];
+        for (int i = 0; i < size; i++) {
+            iDerivative = functions[i].derivative();
+            for (int j = 0; j < size; j++) {
+                if (j == i)
+                    innerProduct[j] = iDerivative;
+                else
+                    innerProduct[j] = functions[j];
+                sum[i] = new MultiProduct(innerProduct[0], Auxiliary.removeFirst(innerProduct));
             }
-        functions[i] = temp;
         }
-        return new MultiProduct(new Constant(1), ret);
+        return new MultiSum(sum[0], Auxiliary.removeFirst(sum));
     }
     @Override
     public Function taylorPolynomial(int n) {

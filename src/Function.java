@@ -39,16 +39,11 @@ public abstract class Function {
         Function derivative = this;
         double[] coefficients = new double[n];
         for (int k = 0; k < n; k++) {
-            coefficients[k] = derivative.valueAt(0)/factorial(k);
+            coefficients[k] = derivative.valueAt(0)/Auxiliary.factorial(k);
             derivative = derivative.derivative();
         }
         return new Polynomial(coefficients);
     }
-    private double factorial(double x) {
-        double result = 1.0;
-        for (int i = 2; i <=x; i++)
-            result *= i;
-        return result;
-    }
+
 
 }

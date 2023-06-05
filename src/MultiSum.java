@@ -37,7 +37,7 @@ public class MultiSum extends Function {
         Function[] ret = new Function[functions.length];
         for (int i  = 0; i < functions.length; i++)
             ret[i] = functions[i].derivative();
-        return new MultiSum(new Constant(0), ret);
+        return new MultiSum(ret[0], Auxiliary.removeFirst(ret));
     }
 
 
