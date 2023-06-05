@@ -7,12 +7,12 @@ Function divisor;
     }
     @Override
     public double valueAt(double x) {
-        return 0;
+        return dividend.valueAt(x)/divisor.valueAt(x);
     }
 
     @Override
     public String toString() {
-        return null;
+        return "(" + dividend.toString() + " / " + divisor.toString() + ")";
     }
 
     @Override
@@ -20,6 +20,6 @@ Function divisor;
        return new Quotient(
                     new Difference(
                         new Product(dividend.derivative(), divisor), new Product(dividend, divisor.derivative())),
-                    new Power(divisor, 2));
+       new Power(divisor, 2));
     }
 }
