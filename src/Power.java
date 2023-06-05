@@ -13,7 +13,7 @@ public class Power extends Function {
         double value = function.valueAt(x);
         for (int i = 0; i < exponent; i++)
             ret *= value;
-        return value;
+        return ret;
     }
 
     @Override

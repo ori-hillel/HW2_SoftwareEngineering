@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Correct output, until quotient1 - value at 0.0, exclusive">
+    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Correct output, until quotient1 - value at -1.0, exclusive">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Polynomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polynomial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Power.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686001219454</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Correct output, until quotient1 - value at -1.0, exclusive">
+      <created>1686001991791</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1686001991791</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +372,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Constant class created, not fully implemented" />
     <MESSAGE value="MultiSum class created, not fully implemented" />
     <MESSAGE value="Sum class created, not fully implemented" />
     <MESSAGE value="MultiProduct class created, not fully implemented" />
@@ -390,7 +396,8 @@
     <MESSAGE value="GETTING THERE" />
     <MESSAGE value="Correct output, until quotient1" />
     <MESSAGE value="Correct output, until quotient1 - value at 0.0, exclusive" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct output, until quotient1 - value at 0.0, exclusive" />
+    <MESSAGE value="Correct output, until quotient1 - value at -1.0, exclusive" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct output, until quotient1 - value at -1.0, exclusive" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
