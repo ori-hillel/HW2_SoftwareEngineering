@@ -1,9 +1,14 @@
 public abstract class Auxiliary {
-    public static Function[] removeFirst(Function ... f) {
+    public static Function[] removeIndex(int index, Function ... f) {
         int size = f.length;
         Function[] ret = new Function[size - 1];
-        for (int i = 1; i < size; i++)
-            ret[i-1] = f[i];
+        for (int i = 0; i < size; i++) {
+            if (i < index)
+                ret[i] = f[i];
+            else if (i > index)
+                ret[i-1] = f[i];
+        }
+
         return ret;
     }
 

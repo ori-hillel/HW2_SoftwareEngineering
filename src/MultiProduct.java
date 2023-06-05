@@ -47,10 +47,10 @@ public class MultiProduct extends Function {
                     innerProduct[j] = iDerivative;
                 else
                     innerProduct[j] = functions[j];
-                sum[i] = new MultiProduct(innerProduct[0], Auxiliary.removeFirst(innerProduct));
+                sum[i] = new MultiProduct(innerProduct[i], Auxiliary.removeIndex(i, innerProduct));
             }
         }
-        return new MultiSum(sum[0], Auxiliary.removeFirst(sum));
+        return new MultiSum(sum[0], Auxiliary.removeIndex(0, sum));
     }
     @Override
     public Function taylorPolynomial(int n) {
