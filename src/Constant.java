@@ -14,24 +14,15 @@ public class Constant extends Function {
         return this.value;
     }
 @Override
-    public Function derivative() { return new Constant(0);}
-@Override
-    public Function taylorPolynomial(int n) {
-        return this;
-}
-
-    @Override
-    public double bisectionMethod(double a, double b, double epsilon) {
-        return 0;
-    }
-
-    @Override
-    public double newtonRaphsonMethod(double a, double epsilon) {
-        return 0;
-    }
-
+    public Constant derivative() { return new Constant(0);}
     @Override
     public String toString() {
+        if (value / (double)((int)value) == 1 || this.value == 0.0) // this.value is not a fraction
+             return "(" + (int)this.value + ")";
         return "(" + this.value + ")";
+    }
+    @Override
+    public Constant taylorPolynomial(int n) {
+        return new Constant(value);
     }
 }

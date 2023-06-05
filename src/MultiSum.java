@@ -5,7 +5,12 @@ public class MultiSum extends Function {
         return functions;
     }
 
-    public MultiSum(Function function, Function ... functions) {}
+    public MultiSum(Function function, Function ... functions) {
+        this.functions = new Function[functions.length + 1];
+        this.functions[0] = function;
+        for (int i = 0; i < functions.length; i++)
+            this.functions[i+1] = functions[i];
+    }
 
     @Override
     public double valueAt(double x) {
@@ -28,17 +33,13 @@ public class MultiSum extends Function {
     }
 
     @Override
-    public Function derivative() {
+    public MultiSum derivative() {
         Function[] ret = new Function[functions.length];
         for (int i  = 0; i < functions.length; i++)
             ret[i] = functions[i].derivative();
         return new MultiSum(new Constant(0), ret);
     }
 
-    @Override
-    public double bisectionMethod(double a, double b, double epsilon) {
-        return 0;
-    }
 
     @Override
     public double newtonRaphsonMethod(double a, double epsilon) {
