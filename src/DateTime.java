@@ -36,7 +36,11 @@ public class DateTime extends Date{
     }
     @Override
     public int hashCode() {
-        return super.hashCode() + hour + minute + 1;
+        return (getYear() + MAX_YEAR + 1) * (MAX_MONTH*MAX_DAY*MAX_HOUR*MAX_MINUTE) +
+                getMonth() * (MAX_DAY*MAX_HOUR*MAX_MINUTE) +
+                getDay() * (MAX_HOUR*MAX_MINUTE) +
+                getHour() * MAX_MINUTE +
+                getMinute();
     }
     @Override
     public String toString() {
