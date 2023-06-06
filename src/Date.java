@@ -1,11 +1,11 @@
 public class Date {
     private int day=1, month=1, year = 0;
-    private final int MIN_DAY = 1;
-    private final int MAX_DAY = 31;
-    private final int MIN_MONTH = 1;
-    private final int MAX_MONTH = 12;
-    private final int MIN_YEAR = -3999;
-    private final int MAX_YEAR = 3999;
+    protected final int MIN_DAY = 1;
+    protected final int MAX_DAY = 31;
+    protected final int MIN_MONTH = 1;
+    protected final int MAX_MONTH = 12;
+    protected final int MIN_YEAR = -3999;
+    protected final int MAX_YEAR = 3999;
     public Date(int year, int month, int day){
         if (day >= MIN_DAY && day <= MAX_DAY) this.day = day;
         if (month >= MIN_MONTH && month <= MAX_MONTH) this.month = month;
