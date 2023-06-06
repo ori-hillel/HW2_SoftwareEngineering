@@ -29,7 +29,11 @@ public abstract class Function {
         return (left+right)/2;
     }
     public double newtonRaphsonMethod(double a, double epsilon) {
-        return 0;
+        double root=this.valueAt(a)/this.derivative().valueAt(a);
+        while(valueAt(root)<epsilon)
+        {
+            root=root-(this.valueAt(root)/this.derivative().valueAt(root))
+        }        return root;
     }
 
     public double newtonRaphsonMethod(double a) {
