@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Correct output until poly1, value at -80.456">
-      <change afterPath="$PROJECT_DIR$/src/newtonRootFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Function.java" afterDir="false" />
+    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Updated hashCode() in Date class">
+      <change beforePath="$PROJECT_DIR$/src/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DateTime.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +40,6 @@
         <option name="url" value="https://github.com/ori-hillel/HW2_SoftwareEngineering.git" />
       </UrlAndAccount>
     </option>
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QYyzY33GjjpWJwN0Jd7JMgLvqY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -80,7 +76,7 @@
       <workItem from="1685612024450" duration="4491000" />
       <workItem from="1685699527925" duration="6163000" />
       <workItem from="1686052755183" duration="1907000" />
-      <workItem from="1686057515253" duration="2391000" />
+      <workItem from="1686061234391" duration="949000" />
     </task>
     <task id="LOCAL-00001" summary="Date class constructor and attributes implemented">
       <created>1685546318229</created>
@@ -362,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686004281735</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Updated hashCode() in Date class">
+      <created>1686061778159</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1686061778159</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +382,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="Ori" />
                       </list>
                     </value>
                   </entry>
@@ -392,7 +395,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="MultiProduct class created, not fully implemented" />
     <MESSAGE value="Product class created, not fully implemented" />
     <MESSAGE value="MultiProduct's and MultiSum's constructors updated s.t. sending 1 argument would lead to compilation error" />
     <MESSAGE value="Negation class created, not fully implemented" />
@@ -417,7 +419,8 @@
     <MESSAGE value="Correct output, until quotient1 - value at -1.0, exclusive" />
     <MESSAGE value="Correct output, until the end of quotient valueAt() testing" />
     <MESSAGE value="Correct output until taylor polynomial of order 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct output until taylor polynomial of order 2" />
+    <MESSAGE value="Updated hashCode() in Date class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated hashCode() in Date class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
