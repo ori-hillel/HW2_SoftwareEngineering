@@ -30,9 +30,9 @@ public abstract class Function {
     }
     public double newtonRaphsonMethod(double a, double epsilon) {
         double root=this.valueAt(a)/this.derivative().valueAt(a);
-        while(valueAt(root)<epsilon)
+        while(this.valueAt(root)<epsilon)
         {
-            root=root-(this.valueAt(root)/this.derivative().valueAt(root))
+            root=root-(this.valueAt(root)/this.derivative().valueAt(root));
         }        return root;
     }
 
