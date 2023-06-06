@@ -35,21 +35,7 @@ public class Date {
     }
     @Override
     public int hashCode() {
-        String ret = "";
-        if (day/10==0)
-            ret += "9" + day;
-        else
-            ret += day;
-
-        if (month/10==0)
-            ret += "0" + month;
-        else
-            ret += month;
-        ret += year;
-        return Integer.parseInt(ret);
-
-
-
+        return (year + MAX_YEAR)*(MAX_DAY*MAX_MONTH) + month*MAX_DAY + day;
     }
     @Override
     public boolean equals(Object d) {
