@@ -23,6 +23,6 @@ public class Power extends Function {
 
     @Override
     public MultiProduct derivative() {
-        return new MultiProduct(new Constant(exponent), function.derivative(), new Power(function, exponent - 1));
+        return new MultiProduct(new Constant(exponent), new Power(function, exponent - 1), function.derivative());
     }
 }

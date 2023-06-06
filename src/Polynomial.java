@@ -37,8 +37,16 @@ public class Polynomial extends Function {
         boolean isFirst = true;
         for (int exp = 0; exp < size; exp++) {
             temp = "";
-            if (clonedCoefficients[exp] == 0)
+            if (clonedCoefficients[exp] == 0) {
+                if (isFirst) {
+                    temp += "0";
+                    if (size == 1) {
+                        ret += temp;
+                        return ret + ")";
+                    }
+                }
                 continue;
+            }
             if (!isFirst) {
                 if (clonedCoefficients[exp] > 0)
                     temp += " + ";

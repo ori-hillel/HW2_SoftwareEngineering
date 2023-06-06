@@ -38,9 +38,6 @@ public abstract class Function {
     public Polynomial taylorPolynomial(int n) {
         Function f = this;
         double[] coefficients = new double[n+1];
-        if (n == 0)
-            return new Polynomial(this.valueAt(0));
-        else
             for (int k = 0; k < n+1; k++) {
                 coefficients[k] = f.valueAt(0)/Auxiliary.factorial(k);
                 f = f.derivative();
