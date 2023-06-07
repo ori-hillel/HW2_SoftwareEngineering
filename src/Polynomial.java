@@ -31,6 +31,7 @@ public class Polynomial extends Function {
     @Override
     public String toString() {
         int size = coefficients.length;
+        if (Auxiliary.compareArrays(coefficients, new double[size])) return ("(0)");
         double[] clonedCoefficients = coefficients.clone();
         String ret = "(";
         String temp;
