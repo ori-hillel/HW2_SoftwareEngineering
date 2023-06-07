@@ -35,7 +35,7 @@ public class Date {
     }
     @Override
     public int hashCode() {
-        return (year + MAX_YEAR)*(MAX_DAY*MAX_MONTH) + month*MAX_DAY + day;
+        return (year + MAX_YEAR + 1)*(MAX_DAY*MAX_MONTH) + month*MAX_DAY + day;
     }
     @Override
     public boolean equals(Object d) {

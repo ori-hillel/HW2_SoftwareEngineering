@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Updated hashCode() in Date class">
+    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="implemented UNIQUE hash functions for Date, DateTime classes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DateTime.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Ori" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,6 +77,7 @@
       <workItem from="1685699527925" duration="6163000" />
       <workItem from="1686052755183" duration="1907000" />
       <workItem from="1686061234391" duration="949000" />
+      <workItem from="1686119337936" duration="99000" />
     </task>
     <task id="LOCAL-00001" summary="Date class constructor and attributes implemented">
       <created>1685546318229</created>
@@ -382,7 +383,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Ori" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
