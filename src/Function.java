@@ -1,3 +1,5 @@
+import javax.swing.text.DefaultEditorKit;
+
 public abstract class Function {
     private final double DEFAULT_EPSILON = 0.00001;
     public abstract double valueAt(double x);
@@ -33,8 +35,8 @@ public abstract class Function {
         Function derivative = this.derivative();
         do {
             root = root - (this.valueAt(root) / derivative.valueAt(root));
-        } while(Auxiliary.abs(this.valueAt(root)) < epsilon);
-        return root - (this.valueAt(root) / derivative.valueAt(root));
+        } while(!(Auxiliary.abs(this.valueAt(root)) < epsilon));
+        return root;
     }
 
     public double newtonRaphsonMethod(double a) {
@@ -42,8 +44,8 @@ public abstract class Function {
         Function derivative = this.derivative();
         do {
             root = root - (this.valueAt(root) / derivative.valueAt(root));
-        } while(Auxiliary.abs(this.valueAt(root)) < DEFAULT_EPSILON);
-        return root - (this.valueAt(root) / derivative.valueAt(root));
+        } while(!(Auxiliary.abs(this.valueAt(root)) < DEFAULT_EPSILON));
+        return root;
     }
     public Polynomial taylorPolynomial(int n) {
         Function f = this;
