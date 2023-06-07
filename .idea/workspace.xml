@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="implemented UNIQUE hash functions for Date, DateTime classes">
+    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="minor change to hashCode()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,7 @@
       <workItem from="1685699527925" duration="6163000" />
       <workItem from="1686052755183" duration="1907000" />
       <workItem from="1686061234391" duration="949000" />
-      <workItem from="1686119337936" duration="99000" />
+      <workItem from="1686119337936" duration="4477000" />
     </task>
     <task id="LOCAL-00001" summary="Date class constructor and attributes implemented">
       <created>1685546318229</created>
@@ -366,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686061778159</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="minor change to hashCode()">
+      <created>1686133651308</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1686133651308</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +404,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Product class created, not fully implemented" />
     <MESSAGE value="MultiProduct's and MultiSum's constructors updated s.t. sending 1 argument would lead to compilation error" />
     <MESSAGE value="Negation class created, not fully implemented" />
     <MESSAGE value="Difference, Polynomial" />
@@ -421,7 +428,8 @@
     <MESSAGE value="Correct output, until the end of quotient valueAt() testing" />
     <MESSAGE value="Correct output until taylor polynomial of order 2" />
     <MESSAGE value="Updated hashCode() in Date class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated hashCode() in Date class" />
+    <MESSAGE value="minor change to hashCode()" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor change to hashCode()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -432,8 +440,8 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="46" />
+          <line>158</line>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -17,7 +17,7 @@ public abstract class Function {
         return (left+right)/2;
     }
     public double bisectionMethod(double a, double b) {
-        double left =a,right =b;
+        double left =a ,right =b;
         double mid;
         while(right-left>DEFAULT_EPSILON){
             mid = (right+left)/2;
@@ -29,15 +29,29 @@ public abstract class Function {
         return (left+right)/2;
     }
     public double newtonRaphsonMethod(double a, double epsilon) {
-        double root=this.valueAt(a)/this.derivative().valueAt(a);
-        while(this.valueAt(root)<epsilon)
-        {
-            root=root-(this.valueAt(root)/this.derivative().valueAt(root));
-        }        return root;
+        double root = a;
+        do {
+            root = root - (this.valueAt(root) / this.derivative().valueAt(root));
+        } while(this.valueAt(root) < epsilon);
+//        while(this.valueAt(root) < DEFAULT_EPSILON)
+//        {
+//            root = root - (this.valueAt(root) / this.derivative().valueAt(root));
+//        }
+//        root = root - (this.valueAt(root) / this.derivative().valueAt(root));
+        return root - (this.valueAt(root) / this.derivative().valueAt(root));
     }
 
     public double newtonRaphsonMethod(double a) {
-        return 0;
+        double root = a;
+        do {
+            root = root - (this.valueAt(root) / this.derivative().valueAt(root));
+        } while(this.valueAt(root) < DEFAULT_EPSILON);
+//        while(this.valueAt(root) < DEFAULT_EPSILON)
+//        {
+//            root = root - (this.valueAt(root) / this.derivative().valueAt(root));
+//        }
+//        root = root - (this.valueAt(root) / this.derivative().valueAt(root));
+        return root - (this.valueAt(root) / this.derivative().valueAt(root));
     }
     public Polynomial taylorPolynomial(int n) {
         Function f = this;

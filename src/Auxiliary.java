@@ -22,4 +22,5 @@ public abstract class Auxiliary {
     public static boolean isWholeNumber(double num) {
         return (num % 1) == 0;
     }
+    public static double abs(double num) { return ((num > 0) ?  num : -num);}
 }

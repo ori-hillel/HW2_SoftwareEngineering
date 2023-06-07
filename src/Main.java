@@ -58,106 +58,105 @@ public class Main {
      */
     private static void testPartB() {
         System.out.println("-------------------- Tests for part B --------------------");
-        rnd = new Random(42);
-
-        Function const1 = new Constant(12345);
-        testFunction(const1, "const1", 10);
-
-        Function const2 = new Constant(12.391709);
-        testFunction(const2, "const2", 10);
-
-        Function const3 = new Constant(-1709);
-
-        Function prod1 = new Product(
-                                     new Sum(
-                                             const1,
-                                             const2),
-                                     const3);
-        testFunction(prod1, "prod1", 10);
-
-        Function prod2 = new Product(
-                                    new Sum(
-                                            const1,
-                                            const2),
-                                    new Negation(
-                                            new Negation(
-                                                         const3)));
-        testFunction(prod2, "prod2", 10);
-
-        Function diff1 = new Difference(const1, const3);
-        testFunction(diff1, "diff1", 10);
-
-        Function quotient1 = new Quotient(
-                                          new Sum(
-                                                  new Difference(
-                                                          new Product(
-                                                                  const1,
-                                                                  const3),
-                                                          const2),
-                                                  new Polynomial(1, 0, 1)),
-                                          prod1);
-        testFunction(quotient1, "quotient1", 4);
-
-        Function multiSum1 = new MultiSum(
-                                    new Constant(21.03),
-                                    new Constant(3));
-        testFunction(multiSum1, "multiSum1", 10);
-
-        Function poly1 = new Polynomial(0, 0, 1, 1.5, 2, 3.1415);
-        testFunction(poly1, "poly1", 10);
-
-        Function poly2 = new Polynomial(1, 0, 2, 1.5, 5, 2.17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3);
-        testFunction(poly2, "poly2", 20);
-
-        Function multiSum2 = new MultiSum(
-                                    new Constant(21.03),
-                                    poly1,
-                                    new Constant(5),
-                                    new Polynomial(3.1415));
-        testFunction(multiSum2, "multiSum2", 10);
-
-        Function multiProd1 = new MultiProduct(new Constant(10), new Polynomial(7, 3.5, 2, 1));
-        testFunction(multiProd1, "multiProd1", 10);
-
-        Function multiProd2 = new MultiProduct(
-                                            new Constant(3),
-                                            poly2,
-                                            new Negation(
-                                                    new Sum(
-                                                            new Constant(21),
-                                                            poly2)));
-        testFunction(multiProd2, "multiProd2", 10);
-
-        Function pow1 = new Power(poly1, 3);
-        testFunction(pow1, "pow1", 5);
-
-        Function pow2 = new Power(pow1, 3);
-        testFunction(pow2, "pow2", 4);
-
-        Function pow3 = new Power(new Negation(poly1), 2);
-        testFunction(pow3, "pow3", 4);
-
-        Function quotient2 = new Quotient(new Polynomial(1, 0, 2.5, 3), new Polynomial(1, 2, 3, 4));
-        testFunction(quotient2, "quotient2", 8);
-
-        Function massiveFunc = new Sum(
-                                new MultiSum(quotient1, poly1, poly2),
-                                new Negation(
-                                        new Sum(
-                                                quotient1,
-                                                new Quotient(
-                                                        new Sum(
-                                                                new Difference(
-                                                                        pow1,
-                                                                        const3),
-                                                                const2),
-                                                        new Negation(
-                                                                new Quotient(
-                                                                        new Constant(2.17),
-                                                                        new Difference(quotient1, new Negation(poly2))))))));
-        testFunction(massiveFunc, "massiveFunc", 5);
-
-//        testRootFinding();
+//        rnd = new Random(42);
+//
+//        Function const1 = new Constant(12345);
+//        testFunction(const1, "const1", 10);
+//
+//        Function const2 = new Constant(12.391709);
+//        testFunction(const2, "const2", 10);
+//
+//        Function const3 = new Constant(-1709);
+//
+//        Function prod1 = new Product(
+//                                     new Sum(
+//                                             const1,
+//                                             const2),
+//                                     const3);
+//        testFunction(prod1, "prod1", 10);
+//
+//        Function prod2 = new Product(
+//                                    new Sum(
+//                                            const1,
+//                                            const2),
+//                                    new Negation(
+//                                            new Negation(
+//                                                         const3)));
+//        testFunction(prod2, "prod2", 10);
+//
+//        Function diff1 = new Difference(const1, const3);
+//        testFunction(diff1, "diff1", 10);
+//
+//        Function quotient1 = new Quotient(
+//                                          new Sum(
+//                                                  new Difference(
+//                                                          new Product(
+//                                                                  const1,
+//                                                                  const3),
+//                                                          const2),
+//                                                  new Polynomial(1, 0, 1)),
+//                                          prod1);
+//        testFunction(quotient1, "quotient1", 4);
+//
+//        Function multiSum1 = new MultiSum(
+//                                    new Constant(21.03),
+//                                    new Constant(3));
+//        testFunction(multiSum1, "multiSum1", 10);
+//
+//        Function poly1 = new Polynomial(0, 0, 1, 1.5, 2, 3.1415);
+//        testFunction(poly1, "poly1", 10);
+//
+//        Function poly2 = new Polynomial(1, 0, 2, 1.5, 5, 2.17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3);
+//        testFunction(poly2, "poly2", 20);
+//
+//        Function multiSum2 = new MultiSum(
+//                                    new Constant(21.03),
+//                                    poly1,
+//                                    new Constant(5),
+//                                    new Polynomial(3.1415));
+//        testFunction(multiSum2, "multiSum2", 10);
+//
+//        Function multiProd1 = new MultiProduct(new Constant(10), new Polynomial(7, 3.5, 2, 1));
+//        testFunction(multiProd1, "multiProd1", 10);
+//
+//        Function multiProd2 = new MultiProduct(
+//                                            new Constant(3),
+//                                            poly2,
+//                                            new Negation(
+//                                                    new Sum(
+//                                                            new Constant(21),
+//                                                            poly2)));
+//        testFunction(multiProd2, "multiProd2", 10);
+//
+//        Function pow1 = new Power(poly1, 3);
+//        testFunction(pow1, "pow1", 5);
+//
+//        Function pow2 = new Power(pow1, 3);
+//        testFunction(pow2, "pow2", 4);
+//
+//        Function pow3 = new Power(new Negation(poly1), 2);
+//        testFunction(pow3, "pow3", 4);
+//
+//        Function quotient2 = new Quotient(new Polynomial(1, 0, 2.5, 3), new Polynomial(1, 2, 3, 4));
+//        testFunction(quotient2, "quotient2", 8);
+//
+//        Function massiveFunc = new Sum(
+//                                new MultiSum(quotient1, poly1, poly2),
+//                                new Negation(
+//                                        new Sum(
+//                                                quotient1,
+//                                                new Quotient(
+//                                                        new Sum(
+//                                                                new Difference(
+//                                                                        pow1,
+//                                                                        const3),
+//                                                                const2),
+//                                                        new Negation(
+//                                                                new Quotient(
+//                                                                        new Constant(2.17),
+//                                                                        new Difference(quotient1, new Negation(poly2))))))));
+//        testFunction(massiveFunc, "massiveFunc", 5);
+        testRootFinding();
     }
 
     /**
@@ -166,7 +165,7 @@ public class Main {
     private static void testFunction(Function function, String name, int taylorMaxOrder) {
         System.out.println(name + ": " + function);
         System.out.println(name + " with toString: " + function.toString());
-        printFunctionValues(function, name, 10);
+//        printFunctionValues(function, name, 10);
         System.out.println(name + " derivative: " + function.derivative());
         printTaylorPolynomial(function, name, taylorMaxOrder);
         System.out.println();
