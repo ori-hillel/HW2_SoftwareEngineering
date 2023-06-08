@@ -1,24 +1,25 @@
 public class Polynomial extends Function {
+    /**
+     * This class represents a function of type polynomial.
+     * Consists of an array of coefficients (type double).
+     */
     private double[] coefficients;
 
-    // Constructor to initialize the Polynomial with an array of coefficients
     public Polynomial(double... coefficients) {
         int size = coefficients.length;
         this.coefficients = new double[size];
 
-        // Copy the coefficients from the input array to the instance variable
         for (int i = 0; i < size; i++) {
             this.coefficients[i] = coefficients[i];
         }
     }
-
-    // Calculate the value of the Polynomial at a given point x
+    /**
+     * overrides Function.valueAt(double x).
+     * @param x is a given point (double)
+     * @return the value of the  current function at fixed point x
+     */
     @Override
     public double valueAt(double x) {
-        /*
-        * Calculate the value of the Polynomial at a given point x
-        * @param x is the point (double)
-        * */
         double sum = 0;
         Function base;
         Function baseToExponent;
@@ -44,8 +45,10 @@ public class Polynomial extends Function {
 
         return sum;
     }
-
-    // Return a string representation of the Polynomial
+    /**
+     * overrides Function.toString().
+     * @return a string which represents the function.
+     */
     @Override
     public String toString() {
         int size = coefficients.length;
@@ -113,8 +116,10 @@ public class Polynomial extends Function {
 
         return ret + ")";
     }
-
-    // Calculate the derivative of the Polynomial
+    /**
+     * overrides Function.derivative().
+     * @return the derivative of the current function.
+     */
     @Override
     public Polynomial derivative() {
         double[] ret = coefficients.clone();
