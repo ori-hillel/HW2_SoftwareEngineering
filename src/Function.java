@@ -4,7 +4,7 @@ public abstract class Function {
     /**
      * abstract class, which represents a function.
      */
-    private final double DEFAULT_EPSILON = 0.00001;
+    private static final double DEFAULT_EPSILON = 0.00001;
 
     /**
      * Abstract method to calculate the value of the function at a given point
