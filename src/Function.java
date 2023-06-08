@@ -124,7 +124,7 @@ public abstract class Function {
     /**
      * calculates the Taylor polynomial of a given order n, of the current function.
      * @param n the order of the Taylor polynomial
-     * @return the taylor polynomial
+     * @return the taylor polynomial of order n
      */
     public Polynomial taylorPolynomial(int n) {
         Function f = this;
