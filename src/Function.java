@@ -3,16 +3,19 @@ import javax.swing.text.DefaultEditorKit;
 public abstract class Function {
     private final double DEFAULT_EPSILON = 0.00001;
 
-    // Abstract method to calculate the value of the function at a given point
-
     public abstract double valueAt(double x);
+    /*
+        Abstract method to calculate the value of the function at a given point
+         @param x is a given point (double)
+         */
 
-    // Abstract method to return a string representation of the function
     @Override
     public abstract String toString();
+  /* Abstract method to return a string representation of the function*/
 
-    // Abstract method to calculate the derivative of the function
+
     public abstract Function derivative();
+    // Abstract method to calculate the derivative of the function
     public double bisectionMethod(double a, double b, double epsilon) {
         /*
     // Bisection method for finding the root of the function within the given interval with a specified epsilon

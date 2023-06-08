@@ -15,6 +15,10 @@ public class Polynomial extends Function {
     // Calculate the value of the Polynomial at a given point x
     @Override
     public double valueAt(double x) {
+        /*
+        * Calculate the value of the Polynomial at a given point x
+        * @param x is the point (double)
+        * */
         double sum = 0;
         Function base;
         Function baseToExponent;

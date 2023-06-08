@@ -18,15 +18,19 @@ public class MultiProduct extends Function {
         // Calculate the value of the MultiProduct at a given point x
         @Override
         public double valueAt(double x) {
+        /*    Calculate the value of the MultiProduct at a given point x
+        *@param x is the given point (double)
+        * */
             double product = 1;
             for (Function f : functions)
                 product *= f.valueAt(x);
             return product;
         }
 
-        // Return a string representation of the MultiProduct
+
         @Override
         public String toString() {
+            // Return a string representation of the MultiProduct
             String ret = "(";
             for (int i = 0; i < functions.length; i++) {
                 if (i == 0)
@@ -39,9 +43,10 @@ public class MultiProduct extends Function {
             return ret;
         }
 
-        // Calculate the derivative of the MultiProduct
+
         @Override
         public Function derivative() {
+            // Calculate the derivative of the MultiProduct
             int size = functions.length;
             Function iDerivative = functions[0].derivative();
             Function[] innerProduct = new Function[size];

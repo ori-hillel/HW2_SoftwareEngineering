@@ -17,6 +17,9 @@ public class Constant extends Function {
     public Constant derivative() { return new Constant(0);}
     @Override
     public String toString() {
+        /*
+        * Return a string representation of the constant
+        * */
         if (value / (double)((int)value) == 1 || this.value == 0.0) // this.value is not a fraction
              return "(" + (int)this.value + ")";
         return "(" + this.value + ")";
