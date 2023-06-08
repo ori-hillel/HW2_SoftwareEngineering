@@ -1,4 +1,8 @@
 public class MultiSum extends Function {
+    /**
+     * This class represents a function of type multi sum.
+     * Consists of an array of functions.
+     */
     private Function[] functions;
 
     public Function[] getFunctions() {
@@ -11,7 +15,11 @@ public class MultiSum extends Function {
         for (int i = 0; i < functions.length; i++)
             this.functions[i+1] = functions[i];
     }
-
+    /**
+     * overrides Function.valueAt(double x).
+     * @param x is a given point (double)
+     * @return the value of the  current function at fixed point x
+     */
     @Override
     public double valueAt(double x) {
         double sum = 0;
@@ -19,7 +27,10 @@ public class MultiSum extends Function {
             sum += f.valueAt(x);
         return sum;
     }
-
+    /**
+     * overrides Function.toString().
+     * @return a string which represents the function.
+     */
     @Override
     public String toString() {
         String ret = "(";
@@ -31,7 +42,10 @@ public class MultiSum extends Function {
         ret += ")";
         return ret;
     }
-
+    /**
+     * overrides Function.derivative().
+     * @return the derivative of the current function.
+     */
     @Override
     public MultiSum derivative() {
         Function[] ret = new Function[functions.length];

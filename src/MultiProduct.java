@@ -1,8 +1,10 @@
 
 public class MultiProduct extends Function {
+    /**
+     * This class represents a function of type multi product.
+     * Consists of an array of functions.
+     */
         private Function[] functions;
-
-        // Constructor to initialize the MultiProduct with a main function and additional functions
         public MultiProduct(Function function, Function... functions) {
             this.functions = new Function[functions.length + 1];
             this.functions[0] = function;
@@ -10,27 +12,29 @@ public class MultiProduct extends Function {
                 this.functions[i + 1] = functions[i];
         }
 
-        // Get the array of functions
         public Function[] getFunctions() {
             return functions;
         }
 
-        // Calculate the value of the MultiProduct at a given point x
+    /**
+     * overrides Function.valueAt(double x).
+     * @param x is a given point (double)
+     * @return the value of the  current function at fixed point x
+     */
         @Override
         public double valueAt(double x) {
-        /*    Calculate the value of the MultiProduct at a given point x
-        *@param x is the given point (double)
-        * */
             double product = 1;
             for (Function f : functions)
                 product *= f.valueAt(x);
             return product;
         }
 
-
+    /**
+     * overrides Function.toString().
+     * @return a string which represents the function.
+     */
         @Override
         public String toString() {
-            // Return a string representation of the MultiProduct
             String ret = "(";
             for (int i = 0; i < functions.length; i++) {
                 if (i == 0)
@@ -43,10 +47,12 @@ public class MultiProduct extends Function {
             return ret;
         }
 
-
+    /**
+     * overrides Function.derivative().
+     * @return the derivative of the current function.
+     */
         @Override
         public Function derivative() {
-            // Calculate the derivative of the MultiProduct
             int size = functions.length;
             Function iDerivative = functions[0].derivative();
             Function[] innerProduct = new Function[size];

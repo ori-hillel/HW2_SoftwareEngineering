@@ -15,15 +15,14 @@ public abstract class Function {
 
     /**
      * Overrides object.toString().
-     * @return a string which describes the function.
+     * @return a string which represents the function.
      */
 
     @Override
     public abstract String toString();
-  /* Abstract method to return a string representation of the function*/
 
     /**
-     * derivates the current function.
+     * derives the current function.
      * @return the derivative of the current function.
      */
     public abstract Function derivative();
