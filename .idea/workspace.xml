@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Fixed comments for MultiSum, MultiProduct classes">
-      <change beforePath="$PROJECT_DIR$/src/Negation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Polynomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polynomial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/newtonRootFinder.java" beforeDir="false" />
+    <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="Fixed comments for Power, Product, Sum, Quotient classes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DateTime.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,13 +85,6 @@
       <workItem from="1686119337936" duration="5850000" />
       <workItem from="1686169212253" duration="724000" />
       <workItem from="1686211114720" duration="819000" />
-    </task>
-    <task id="LOCAL-00001" summary="Date class constructor and attributes implemented">
-      <created>1685546318229</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1685546318229</updated>
     </task>
     <task id="LOCAL-00002" summary="Date and DateTime getter/setter classes' methods implemented">
       <created>1685546769886</created>
@@ -422,7 +415,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686229790489</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Fixed comments for Polynomial, Negation classes + the deletion of the newtonRootFinder class">
+      <created>1686230551653</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1686230551653</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Fixed comments for Power, Product, Sum, Quotient classes">
+      <created>1686230877616</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1686230877616</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,8 +459,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="taylorPolynomial implemented" />
-    <MESSAGE value="Covariant return types + update to toString() in Const" />
     <MESSAGE value="Minor changes" />
     <MESSAGE value="Override taylorPolynomial at Constant class" />
     <MESSAGE value="Multisum() constructor implemented" />
@@ -477,7 +482,9 @@
     <MESSAGE value="Fixed comments for Auxiliary class" />
     <MESSAGE value="Fixed comments for Constant class" />
     <MESSAGE value="Fixed comments for MultiSum, MultiProduct classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed comments for MultiSum, MultiProduct classes" />
+    <MESSAGE value="Fixed comments for Polynomial, Negation classes + the deletion of the newtonRootFinder class" />
+    <MESSAGE value="Fixed comments for Power, Product, Sum, Quotient classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed comments for Power, Product, Sum, Quotient classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

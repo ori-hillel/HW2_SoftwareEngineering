@@ -1,9 +1,13 @@
 public class DateTime extends Date{
+    /**
+     * This class represents a date and a time.
+     * Consists of additional 2 integers, which resemble the hour, minute components of the time.
+     */
     private int hour=0, minute=0;
-    private final int MIN_HOUR = 0;
-    private final int MAX_HOUR = 23;
-    private final int MIN_MINUTE = 0;
-    private final int MAX_MINUTE = 59;
+    private static final int MIN_HOUR = 0;
+    private static final int MAX_HOUR = 23;
+    private static final int MIN_MINUTE = 0;
+    private static final int MAX_MINUTE = 59;
 
     public int getHour() {
         return hour;
@@ -26,6 +30,11 @@ public class DateTime extends Date{
         if (hour >= MIN_HOUR && hour <= MAX_HOUR) this.hour = hour;
         if (minute >= MIN_MINUTE && minute <= MAX_MINUTE) this.minute = minute;
     }
+    /**
+     * Overrides Date.equals().
+     * @param dt a given object.
+     * @return true if dt and this object are equal, false otherwise.
+     */
     @Override
     public boolean equals(Object dt) {
         if (dt == this)
@@ -34,6 +43,10 @@ public class DateTime extends Date{
             return false;
         return this.hashCode() == dt.hashCode();
     }
+    /**
+     * Overrides Date.hashCode().
+     * @return a unique identifier (hash code) for the current object.
+     */
     @Override
     public int hashCode() {
         return (getYear() + MAX_YEAR + 1) * (MAX_MONTH*MAX_DAY*MAX_HOUR*MAX_MINUTE) +
@@ -42,6 +55,10 @@ public class DateTime extends Date{
                 getHour() * MAX_MINUTE +
                 getMinute();
     }
+    /**
+     * Overrides Date.toString()
+     * @return a string which represents this DateTime object.
+     */
     @Override
     public String toString() {
         String ret = super.toString() + " ";

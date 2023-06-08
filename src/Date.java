@@ -1,11 +1,15 @@
 public class Date {
+    /**
+     * This class represents a date (DD/MM/YYYY)
+     * Consists of 3 integers, which resemble the day, month and year of the date.
+     */
     private int day=1, month=1, year = 0;
-    protected final int MIN_DAY = 1;
-    protected final int MAX_DAY = 31;
-    protected final int MIN_MONTH = 1;
-    protected final int MAX_MONTH = 12;
-    protected final int MIN_YEAR = -3999;
-    protected final int MAX_YEAR = 3999;
+    protected static final int MIN_DAY = 1;
+    protected static final int MAX_DAY = 31;
+    protected static final int MIN_MONTH = 1;
+    protected static final int MAX_MONTH = 12;
+    protected static final int MIN_YEAR = -3999;
+    protected static final int MAX_YEAR = 3999;
     public Date(int year, int month, int day){
         if (day >= MIN_DAY && day <= MAX_DAY) this.day = day;
         if (month >= MIN_MONTH && month <= MAX_MONTH) this.month = month;
@@ -33,10 +37,21 @@ public class Date {
     public void setYear(int year) {
         if (year >= MIN_YEAR && year <= MAX_YEAR) this.year = year;
     }
+
+    /**
+     * Overrides Object.hashCode().
+     * @return a unique identifier (hash code) for the current object.
+     */
     @Override
     public int hashCode() {
         return (year + MAX_YEAR + 1)*(MAX_DAY*MAX_MONTH) + month*MAX_DAY + day;
     }
+
+    /**
+     * Overrides Objects.equals().
+     * @param d a given object.
+     * @return true if d and this object are equal, false otherwise.
+     */
     @Override
     public boolean equals(Object d) {
         if (d == this)
@@ -45,6 +60,11 @@ public class Date {
             return false;
         return this.hashCode() == d.hashCode();
     }
+
+    /**
+     * Overrides Object.toString()
+     * @return a string which represents this Date object.
+     */
     @Override
     public String toString() {
         String ret = "";
