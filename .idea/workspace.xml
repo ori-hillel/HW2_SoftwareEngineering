@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f5a2d6d7-a4d3-42d1-bb02-dab1886e9684" name="Changes" comment="RaphsonNewton functions require dix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Auxiliary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auxiliary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MultiProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Polynomial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polynomial.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +43,9 @@
         <option name="url" value="https://github.com/ori-hillel/HW2_SoftwareEngineering.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QYyzY33GjjpWJwN0Jd7JMgLvqY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -82,6 +85,7 @@
       <workItem from="1686061234391" duration="949000" />
       <workItem from="1686119337936" duration="5850000" />
       <workItem from="1686169212253" duration="724000" />
+      <workItem from="1686211114720" duration="819000" />
     </task>
     <task id="LOCAL-00001" summary="Date class constructor and attributes implemented">
       <created>1685546318229</created>
