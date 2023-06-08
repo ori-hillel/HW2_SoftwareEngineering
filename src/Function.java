@@ -1,28 +1,41 @@
 import javax.swing.text.DefaultEditorKit;
 
 public abstract class Function {
+    /**
+     * abstract class, which represents a function.
+     */
     private final double DEFAULT_EPSILON = 0.00001;
 
+    /**
+     * Abstract method to calculate the value of the function at a given point
+     * @param x is a given point (double)
+     * @return the value of the  current function at fixed point x
+     */
     public abstract double valueAt(double x);
-    /*
-        Abstract method to calculate the value of the function at a given point
-         @param x is a given point (double)
-         */
+
+    /**
+     * Overrides object.toString().
+     * @return a string which describes the function.
+     */
 
     @Override
     public abstract String toString();
   /* Abstract method to return a string representation of the function*/
 
-
+    /**
+     * derivates the current function.
+     * @return the derivative of the current function.
+     */
     public abstract Function derivative();
-    // Abstract method to calculate the derivative of the function
+
+    /**
+     * returns thr root with respect to a given absolute error epsilon, of the current function in a given closed interval [a, b].
+     * @param a the start point of the interval
+     * @param b the end point of the interval
+     * @param epsilon the absolute given error
+     * @return the function's root in [a, b], with respect to epsilon.
+     */
     public double bisectionMethod(double a, double b, double epsilon) {
-        /*
-    // Bisection method for finding the root of the function within the given interval with a specified epsilon
-    @param epsilon is the strict lower bound for right - left (double)
-    @ a/b -range (double)
-    the function return root
-    */
         double left = a, right = b;
         double mid;
 
@@ -42,14 +55,13 @@ public abstract class Function {
     }
 
 
-
+    /**
+     * returns thr root with respect to a default absolute error epsilon = 10^-5, of the current function in a given closed interval [a, b].
+     * @param a the start point of the interval
+     * @param b the end point of the interval
+     * @return the function's root in [a, b], with respect to epsilon.
+     */
     public double bisectionMethod(double a, double b) {
-           /*
-     * Bisection method for finding the root of the function within the given interval with the default epsilon
-    *@param epsilon is the strict lower bound for right - left (double)
-    *@ a/b -range (double)
-    *the function return  estimated  root
-    */
         double left = a, right = b;
         double mid;
 
@@ -68,15 +80,13 @@ public abstract class Function {
         return (left + right) / 2;
     }
 
-
+    /**
+     * calculates the root of the current function, nearby the fixed given point a, with respect to a given error (epsilon)
+     * @param a the fixed point
+     * @param epsilon the absolute error
+     * @return the root of the function, nearby fixed point a
+     */
     public double newtonRaphsonMethod(double a, double epsilon) {
-        /*
-         Newton-Raphson method for finding the root of the function starting from a given initial point with a specified epsilon
-        *@param epsilon is the strict lower bound (double)
-        *@ a is the x0 we start with given as (double)
-        *the function return the estimated root
-                */
-
         double root = a;
         Function derivative = this.derivative();
 
@@ -89,7 +99,11 @@ public abstract class Function {
         return root;
     }
 
-    // Newton-Raphson method for finding the root of the function starting from a given initial point with the default epsilon
+    /**
+     * calculates the root of the current function, nearby the fixed given point a, with respect to a default error (epsilon = 10^-5)
+     * @param a teh fixed given point
+     * @return the root of the function, nearby fixed point a
+     */
     public double newtonRaphsonMethod(double a) {
         /*
         Newton-Raphson method for finding the root of the function starting from a given initial point with the default epsilon
@@ -107,12 +121,12 @@ public abstract class Function {
         return root;
     }
 
-    // Calculate the Taylor polynomial of the function up to degree n
+    /**
+     * calculates the Taylor polynomial of a given order n, of the current function.
+     * @param n the order of the Taylor polynomial
+     * @return the taylor polynomial
+     */
     public Polynomial taylorPolynomial(int n) {
-        /*
-        *  Calculate the Taylor polynomial of the function up to degree n
-        * @param n is the degree of the polinimial
-        * */
         Function f = this;
         double[] coefficients = new double[n+1];
             for (int k = 0; k < n+1; k++) {
